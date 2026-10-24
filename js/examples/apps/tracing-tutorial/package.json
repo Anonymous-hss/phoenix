@@ -8,7 +8,7 @@
     "evaluate": "npx tsx evaluate-traces.ts",
     "evaluate:sessions": "npx tsx evaluate-traces.ts --sessions",
     "sessions": "npx tsx support-agent.ts --sessions",
-    "start": "npx tsx support-agent.ts"
+    "start": "node init && npx tsx support-agent.ts"
   },
   "dependencies": {
     "@ai-sdk/openai": "^3.0.130",

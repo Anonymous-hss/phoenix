@@ -24,8 +24,8 @@
   ],
   "type": "module",
   "scripts": {
-    "build": "tsc && chmod 755 build/index.js",
-    "dev": "source ./.env && tsx src/index.ts -- --apiKey $PHOENIX_API_KEY --baseUrl $PHOENIX_ENDPOINT",
+    "build": "node init && tsc && chmod 755 build/index.js",
+    "dev": "node init && source ./.env && tsx src/index.ts -- --apiKey $PHOENIX_API_KEY --baseUrl $PHOENIX_ENDPOINT",
     "inspect": "pnpm run build && npx -y @modelcontextprotocol/inspector -- node build/index.js",
     "test": "vitest run",
     "typecheck": "tsc --noEmit"

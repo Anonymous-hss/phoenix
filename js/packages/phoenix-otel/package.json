@@ -1,7 +1,7 @@
 {
   "name": "@arizeai/phoenix-otel",
   "version": "2.3.0",
-  "description": "Phoenix OpenTelemetry tracing SDK for Node.js — register tracing, manual span helpers, and context attributes for LLM observability",
+  "description": "Phoenix OpenTelemetry tracing SDK for Node.js \u2014 register tracing, manual span helpers, and context attributes for LLM observability",
   "keywords": [
     "OpenInference",
     "agents",
@@ -48,7 +48,7 @@
     }
   },
   "scripts": {
-    "build": "tsc --build tsconfig.json tsconfig.esm.json && tsc-alias -p tsconfig.esm.json",
+    "build": "node init && tsc --build tsconfig.json tsconfig.esm.json && tsc-alias -p tsconfig.esm.json",
     "clean": "rimraf dist",
     "postbuild": "echo '{\"type\": \"module\"}' > ./dist/esm/package.json",
     "postpublish": "node ../../scripts/sync-package-docs.mjs clean phoenix-otel",

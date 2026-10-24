@@ -5,7 +5,7 @@
   "description": "Minimal Vercel Eve agent traced with @arizeai/phoenix-otel",
   "type": "module",
   "scripts": {
-    "dev": "eve dev",
+    "dev": "node init && eve dev",
     "typecheck": "tsc"
   },
   "dependencies": {

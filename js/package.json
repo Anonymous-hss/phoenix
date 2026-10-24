@@ -20,7 +20,7 @@
     "url": "git+https://github.com/Arize-ai/phoenix.git"
   },
   "scripts": {
-    "build": "pnpm run -r build",
+    "build": "node init && pnpm run -r build",
     "ci:publish": "pnpm --filter './packages/*' run -r build && pnpm changeset publish",
     "ci:version": "pnpm changeset version",
     "clean": "pnpm run clean:node_modules",

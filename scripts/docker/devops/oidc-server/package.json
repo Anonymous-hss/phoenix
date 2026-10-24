@@ -7,17 +7,17 @@
   "type": "module",
   "main": "dist/server.js",
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
+    "build": "node init && tsc -p tsconfig.build.json",
     "check": "pnpm run fmt:check && pnpm run lint",
     "check:all": "pnpm run check && cd frontend && pnpm run check",
-    "dev": "tsx watch src/server.ts",
+    "dev": "node init && tsx watch src/server.ts",
     "fix": "pnpm run fmt && pnpm run lint:fix",
     "fix:all": "pnpm run fix && cd frontend && pnpm run fix",
     "fmt": "oxfmt --config ../../../../.oxfmtrc.jsonc",
     "fmt:check": "oxfmt --check --config ../../../../.oxfmtrc.jsonc",
     "lint": "oxlint",
     "lint:fix": "oxlint --fix",
-    "start": "node dist/server.js",
+    "start": "node init && node dist/server.js",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

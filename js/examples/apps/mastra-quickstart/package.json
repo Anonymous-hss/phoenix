@@ -10,11 +10,11 @@
   "main": "index.js",
   "scripts": {
     "add_traces": "tsx src/mastra/evals/add_traces.ts",
-    "build": "echo 'mastra build skipped: @mastra/deployer@1.31.0 incompatible with pnpm install-script approval — run `mastra build` directly with --config.dangerouslyAllowAllBuilds when needed' && exit 0",
-    "dev": "pnpx mastra dev",
+    "build": "node init && echo 'mastra build skipped: @mastra/deployer@1.31.0 incompatible with pnpm install-script approval \u2014 run `mastra build` directly with --config.dangerouslyAllowAllBuilds when needed' && exit 0",
+    "dev": "node init && pnpx mastra dev",
     "evals": "tsx src/mastra/evals/evals.ts",
     "experiments": "tsx src/mastra/experiments/experiment.ts",
-    "start": "mastra start",
+    "start": "node init && mastra start",
     "test": "echo \"no tests\""
   },
   "dependencies": {

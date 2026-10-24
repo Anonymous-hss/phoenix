@@ -7,11 +7,11 @@
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "d:down": "docker compose down",
     "d:up": "docker compose up -d",
-    "dev": "NODE_NO_WARNINGS=1 tsx index.ts",
-    "start": "NODE_NO_WARNINGS=1 node dist/index.js"
+    "dev": "node init && NODE_NO_WARNINGS=1 tsx index.ts",
+    "start": "node init && NODE_NO_WARNINGS=1 node dist/index.js"
   },
   "dependencies": {
     "@arizeai/openinference-instrumentation-openai": "^4.4.1",

@@ -5,7 +5,7 @@
   "description": "Generate deterministic, realistic agent trace data (long LLM message histories, tool calls) and send it to a Phoenix instance",
   "type": "module",
   "scripts": {
-    "start": "tsx generate-spans.ts",
+    "start": "node init && tsx generate-spans.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
