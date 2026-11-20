@@ -48,7 +48,7 @@
     }
   },
   "scripts": {
-    "build": "node init && tsc --build tsconfig.json tsconfig.esm.json && tsc-alias -p tsconfig.esm.json",
+    "build": "tsc --build tsconfig.json tsconfig.esm.json && tsc-alias -p tsconfig.esm.json",
     "clean": "rimraf dist",
     "postbuild": "echo '{\"type\": \"module\"}' > ./dist/esm/package.json",
     "postpublish": "node ../../scripts/sync-package-docs.mjs clean phoenix-otel",

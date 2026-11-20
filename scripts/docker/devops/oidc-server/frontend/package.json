@@ -5,9 +5,9 @@
   "description": "User selection interface for Phoenix OIDC server",
   "type": "module",
   "scripts": {
-    "build": "node init && tsc && vite build",
+    "build": "tsc && vite build",
     "check": "pnpm run fmt:check && pnpm run lint",
-    "dev": "node init && vite",
+    "dev": "vite",
     "fix": "pnpm run fmt && pnpm run lint:fix",
     "fmt": "oxfmt --config ../../../../../.oxfmtrc.jsonc",
     "fmt:check": "oxfmt --check --config ../../../../../.oxfmtrc.jsonc",

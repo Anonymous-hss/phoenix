@@ -5,7 +5,7 @@
   "description": "Simple Mastra agent with Arize Phoenix tracing",
   "type": "module",
   "scripts": {
-    "dev": "node init && mastra dev",
+    "dev": "mastra dev",
     "eval": "tsx src/eval/evals.ts"
   },
   "dependencies": {

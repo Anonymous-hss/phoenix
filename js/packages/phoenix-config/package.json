@@ -33,7 +33,7 @@
     }
   },
   "scripts": {
-    "build": "node init && tsc --build tsconfig.json tsconfig.esm.json tsconfig.browser.json && tsc-alias -p tsconfig.browser.json && tsc-alias -p tsconfig.esm.json && tsc-alias -p tsconfig.json",
+    "build": "tsc --build tsconfig.json tsconfig.esm.json tsconfig.browser.json && tsc-alias -p tsconfig.browser.json && tsc-alias -p tsconfig.esm.json && tsc-alias -p tsconfig.json",
     "clean": "rimraf dist",
     "postbuild": "echo '{\"type\": \"module\"}' > ./dist/esm/package.json && echo '{\"type\": \"module\"}' > ./dist/browser/package.json",
     "test": "pnpm run build && vitest run && pnpm run test:browser-build",

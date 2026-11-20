@@ -66,7 +66,7 @@
     }
   },
   "scripts": {
-    "build": "node init && tsc --build tsconfig.json tsconfig.esm.json && tsc-alias -p tsconfig.esm.json",
+    "build": "tsc --build tsconfig.json tsconfig.esm.json && tsc-alias -p tsconfig.esm.json",
     "clean": "rimraf dist",
     "docs": "typedoc",
     "docs:preview": "pnpx http-server ./docs -p 8080 -o",

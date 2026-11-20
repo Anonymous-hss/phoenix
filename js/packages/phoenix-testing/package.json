@@ -28,7 +28,7 @@
     }
   },
   "scripts": {
-    "build": "node init && tsc --build tsconfig.json",
+    "build": "tsc --build tsconfig.json",
     "clean": "rimraf dist",
     "generate": "openapi-typescript --empty-objects-unknown=true --default-non-nullable=false ../../../schemas/openapi.json -o ./src/__generated__/api/v1.ts",
     "prebuild": "pnpm run clean && pnpm run generate",

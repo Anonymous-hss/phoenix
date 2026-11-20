@@ -5,10 +5,10 @@
   "description": "Simple LangChain TypeScript application with Phoenix tracing",
   "type": "module",
   "scripts": {
-    "build": "node init && tsc",
+    "build": "tsc",
     "custom_evals": "npx tsx src/custom_evals.ts",
     "pre_built_evals": "npx tsx src/pre_built_evals.ts",
-    "start": "node init && npx tsx src/index.ts"
+    "start": "npx tsx src/index.ts"
   },
   "dependencies": {
     "@ai-sdk/openai": "^3.0.130",
